@@ -1,0 +1,32 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 40vh;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 400px;
+    }
+}
+
+.component-line {
+    position: absolute;
+    background-color: #64748b;
+    z-index: 0;
+}
+
+.component-arrow::after {
+    content: '▶';
+    position: absolute;
+    color: #64748b;
+    font-size: 14px;
+}
